@@ -1,0 +1,104 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": "/",
+            "button_text": "Shop Now",
+            "count_down": "2025/12/25 22:11:00"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0"
+      ],
+      "settings": {
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "color_scheme": "",
+        "show_line_separator": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "color_ULxFmX": {
+          "type": "color",
+          "settings": {
+            "color": "#f71414",
+            "url_color": "shopify://collections/sale"
+          }
+        },
+        "color_aMnA4q": {
+          "type": "color",
+          "settings": {
+            "color": "#e8dfca",
+            "url_color": "shopify://pages/about-us"
+          }
+        },
+        "icon_DFC9PM": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/15.png",
+            "width_icon": 30,
+            "url_icon": "shopify://collections/sale"
+          }
+        },
+        "icon_DFC9PE": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/4.png",
+            "width_icon": 30,
+            "url_icon": "shopify://collections/collection-1"
+          }
+        }
+      },
+      "block_order": [
+        "color_ULxFmX",
+        "color_aMnA4q",
+        "icon_DFC9PM",
+        "icon_DFC9PE"
+      ],
+      "settings": {
+        "logo_position": "middle-left",
+        "mobile_logo_position": "center",
+        "menu": "main-menu",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "scheme-1",
+        "menu_color_scheme": "",
+        "show_img": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "enable_customer_avatar": true,
+        "margin_bottom": 0,
+        "padding_top": 8,
+        "padding_bottom": 8,
+        "enable-header-wishlist": true
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

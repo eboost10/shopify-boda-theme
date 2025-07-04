@@ -1,0 +1,15 @@
+.related-products {
+  display: block;
+}
+
+.related-products__heading {
+  margin: 0;
+}
+
+.product__payment > span {
+	font-size: 1.4rem;
+}
+
+.product__payment .list-payment {
+	justify-content: flex-start;
+}

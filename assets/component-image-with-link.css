@@ -1,0 +1,51 @@
+
+.main-column-image-with-text {
+    font-size: 0;
+    display: grid;
+    position: relative;
+    column-gap: var(--grid-desktop-horizontal-spacing);
+    row-gap: var(--grid-desktop-vertical-spacing);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.main-column-image-with-text__item {
+    width: 100%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.home-image-with-link .image-with-text {
+    font-size: var(--font_size_base);
+    display: block;
+    max-width: 40rem;
+    position: relative;
+}
+
+.image-with-text.text-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-with-text__image {
+    display: block;
+    position: relative;
+}
+
+.image-with-text__image>a {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: block;
+    position: absolute;
+}
+
+.image-with-text__image>img {
+    max-height: 100px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+}

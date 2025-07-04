@@ -1,0 +1,113 @@
+<div
+  id="Banner-{{ section.id }}-{{ block.id }}"
+  class="banner banner--{{block.settings.image_height}} banner--content-align-{{ block.settings.desktop_content_alignment }} banner--content-align-mobile-{{ block.settings.mobile_content_alignment }} banner--{{ block.settings.image_height }}{% if block.settings.stack_images_on_mobile and block.settings.image != blank  %} banner--stacked{% endif %}{% if block.settings.image_height == 'adapt' and block.settings.image != blank %} banner--adapt{% endif %}{% if block.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+>
+{%- if block.settings.image_height == 'adapt' and block.settings.image != blank -%}
+  {%- style -%}
+    @media screen and (max-width: 749px) {
+      #Banner-{{ section.id }}-{{ block.id }}::before,
+      #Banner-{{ section.id }}-{{ block.id }} .banner__media::before,
+      #Banner-{{ section.id }}-{{ block.id }}:not(.banner--mobile-bottom) .banner__content::before {
+        padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;
+        content: '';
+        display: block;
+      }
+    }
+
+    @media screen and (min-width: 750px) {
+      #Banner-{{ section.id }}-{{ block.id }}::before,
+      #Banner-{{ section.id }}-{{ block.id }} .banner__media::before {
+        padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;
+        content: '';
+        display: block;
+      }
+    }
+  {%- endstyle -%}
+{%- endif -%}
+
+{%- style -%}
+  #Banner-{{ section.id }}-{{ block.id }}::after {
+    opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign full_width = '100vw'
+  assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+
+  if block.settings.image_behavior == 'ambient'
+    assign half_width = '60vw'
+    assign full_width = '120vw'
+    assign stacked_sizes = '(min-width: 750px) 60vw, 120vw'
+    assign widths = '450, 660, 900, 1320, 1800, 2136, 2400, 3600, 7680'
+  elsif block.settings.image_behavior == 'fixed' or block.settings.image_behavior == 'zoom-in'
+    assign half_width = '100vw'
+    assign stacked_sizes = '100vw'
+  else
+    assign half_width = '50vw'
+    assign stacked_sizes = '(min-width: 750px) 50vw, 100vw'
+  endif
+  assign fetch_priority = 'auto'
+  if section.index == 1
+    assign fetch_priority = 'high'
+  endif
+-%}
+  {%- if block.settings.image != blank -%}
+    <div class="banner__media media{% if block.settings.image == blank  %} placeholder {% endif %} {% if block.settings.image_behavior != 'none' %} animate--{{ block.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      {%- liquid
+        assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
+        assign sizes = full_width
+      -%}
+      {{
+        block.settings.image
+        | image_url: width: 3840
+        | image_tag:
+          width: block.settings.image.width,
+          height: image_height,
+          class: image_class,
+          sizes: sizes,
+          widths: widths,
+          fetchpriority: fetch_priority
+      }}
+    </div>
+  {%- else -%}
+    <div class="banner__media media{% if block.settings.image == blank %} placeholder{% endif %}{% if block.settings.image_behavior != 'none' %} animate--{{ block.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    </div>
+  {%- endif -%}
+  <div class="banner__content banner__content--{{ block.settings.desktop_content_position }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    <div class="banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient">
+        
+      <h3
+        class="banner__heading inline-richtext {{ block.settings.heading_size }}"
+        {{ block.shopify_attributes }}
+      >
+        {{ block.settings.heading }}
+      </h3>
+   
+      <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+        <p>{{ block.settings.text }}</p>
+      </div>
+    
+      <div
+        class="banner__buttons{% if block.settings.button_label != blank %} banner__buttons--multiple{% endif %}"
+        {{ block.shopify_attributes }}
+      >
+        {%- if block.settings.button_label != blank -%}
+          <a
+            {% if block.settings.button_link == blank %}
+              role="link" aria-disabled="true"
+            {% else %}
+              href="{{ block.settings.button_link }}"
+            {% endif %}
+            class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+          >
+            {{- block.settings.button_label | escape -}}
+          </a>
+        {%- endif -%}
+        
+      </div>
+     
+    </div>
+  </div>
+</div>

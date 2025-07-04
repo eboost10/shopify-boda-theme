@@ -1,0 +1,47 @@
+
+<div class="breadcrumb-wrapper color-scheme-4 gradient">
+    <div class="page-width">
+        <ul class="breadcrumb">
+            <li class="breadcrumb__item">
+                <a href="/" aria-label="home">{{ 'icon-home.svg' | inline_asset_content }}</a>
+                <span>/</span>
+            </li>
+            {% if template contains 'product' %} 
+                {% if collection %}
+                    {% capture url %}/collections/{{ collection.handle }}{% endcapture %}
+                    <li class="breadcrumb__item">
+                        <a href="{{ url }}" aria-label="link">{{ collection.title }}</a>
+                        <span>/</span>
+                {% endif %}
+                <li class="breadcrumb__item">
+                    <span>{{ product.title }}</span>
+                </li>
+            {% elsif template == 'collection' %}   
+                <li class="breadcrumb__item">
+                    <span>{{ collection.title }}</span>
+                </li> 
+            {% elsif template == 'article' %}
+                <li class="breadcrumb__item">
+                    <a href="{{ blog.url }}" aria-label="link">{{ blog.title }}</a>
+                    <span>/</span>
+                </li>
+                <li class="breadcrumb__item">
+                    <span>{{ article.title }}</span>
+                </li>
+            {% elsif template == 'search' %}
+                <li class="breadcrumb__item">
+                    <span>{{- 'general.search.search' | t -}}</span> 
+                </li>
+            {% else %}
+                <li class="breadcrumb__item">
+                    <span>{{ page_title }}</span>
+                </li>
+            {% endif %}
+            {% if template == "product" and collection %}
+            <li class="prev-next">
+                {% render 'next-prev-product' %}
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+</div>

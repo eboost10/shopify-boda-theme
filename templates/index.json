@@ -1,0 +1,551 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_Qebeyq": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_RVrt8e": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/cropped-victoria-priessnitz-BXB1_-f7cag-unsplash.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "/",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "bottom-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "color_scheme": "scheme-4"
+          }
+        },
+        "slide_kHQEbp": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/cropped-jennifer-kalenberg-Zkgigp-xMDA-unsplash.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "/",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "bottom-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_RVrt8e",
+        "slide_kHQEbp"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "icon_with_text_hxAdit": {
+      "type": "icon-with-text",
+      "blocks": {
+        "icon_item_aqfwhT": {
+          "type": "icon_item",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewbox=\"0 -960 960 960\" width=\"24px\" fill=\"#1f1f1f\"><path d=\"M223.76-206Q182-206 153-235.17q-29-29.16-29-70.83H76v-442h580v140h84l144 194v108h-60q0 41.67-29.24 70.83-29.23 29.17-71 29.17Q682-206 653-235.17q-29-29.16-29-70.83H324q0 42-29.24 71-29.23 29-71 29Zm.24-28q30 0 51-21t21-51q0-30-21-51t-51-21q-30 0-51 21t-21 51q0 30 21 51t51 21ZM104-334h24q6-29 33.5-50.5T224-406q33 0 61.5 21t34.5 51h308v-386H104v386Zm620 100q30 0 51-21t21-51q0-30-21-51t-51-21q-30 0-51 21t-21 51q0 30 21 51t51 21Zm-68-180h194L724-580h-68v166ZM366-527Z\"></path></svg>",
+            "title": "Free Ground Shipping",
+            "description": "on all orders over $80"
+          }
+        },
+        "icon_item_j7RJjz": {
+          "type": "icon_item",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewbox=\"0 -960 960 960\" width=\"24px\" fill=\"#1f1f1f\"><path d=\"M123-232v-52q0-26 13.5-43.5t36.45-28.59Q222-379 269.5-393.5 317-408 391-408t121.5 14.5q47.5 14.5 96.55 37.41Q632-345 645.5-327.5 659-310 659-284v52H123Zm616 0v-52q0-32-10.95-59.98Q717.11-371.96 697-392q23 6 45 15.5t45 20.5q23 11 36.5 30.16T837-284v52h-98ZM391-512q-44.55 0-76.27-31.72Q283-575.45 283-620t31.73-76.28Q346.45-728 391-728t76.27 31.72Q499-664.55 499-620t-31.73 76.28Q435.55-512 391-512Zm258-108q0 44.55-31.72 76.28Q585.55-512 541-512q18.32-22.76 28.16-50.51 9.84-27.74 9.84-57.61Q579-650 568.5-677 558-704 541-728q44.55 0 76.28 31.72Q649-664.55 649-620ZM151-260h480v-24q0-15-7.5-26T595-332q-42-23-90-35.5T391-380q-66 0-114 12.5T187-332q-21 11-28.5 22t-7.5 26v24Zm240-280q33 0 56.5-23.5T471-620q0-33-23.5-56.5T391-700q-33 0-56.5 23.5T311-620q0 33 23.5 56.5T391-540Zm0 280Zm0-360Z\"></path></svg>",
+            "title": "Member Discount",
+            "description": "on order over $100"
+          }
+        },
+        "icon_item_7pAkB4": {
+          "type": "icon_item",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewbox=\"0 -960 960 960\" width=\"24px\" fill=\"#1f1f1f\"><path d=\"M669-172v-408q0-75-52.5-127.5T489-760q-75 0-127.5 52.5T309-580v209l89-89 20 20-123 123-123-123 20-20 89 89v-209q0-87 60.5-147.5T489-788q87 0 147.5 60.5T697-580v408h-28Z\"></path></svg>",
+            "title": "Easy Free Returns",
+            "description": "Description For Icon With text"
+          }
+        },
+        "icon_item_Y9NJWA": {
+          "type": "icon_item",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewbox=\"0 -960 960 960\" width=\"24px\" fill=\"#1f1f1f\"><path d=\"M480-172v-28h280v-302q0-111-83-184.5T480-760q-114 0-197 73.5T200-502v223h-68v-176h40v-47.74Q172-564 197-616q25-52 67-90.5t98.04-60q56.04-21.5 118-21.5T598-766.5q56 21.5 98 60t67 90.5q25 52 25 112.75V-455h40v176h-40v107H480ZM380-424q-11 0-19.5-7.46-8.5-7.47-8.5-18.5 0-11.04 8.5-19.04t19.5-8q11 0 19.5 7.76T408-450q0 11.05-8.5 18.52Q391-424 380-424Zm200 0q-11 0-19.5-7.46-8.5-7.47-8.5-18.5 0-11.04 8.5-19.04t19.5-8q11 0 19.5 7.76T608-450q0 11.05-8.5 18.52Q591-424 580-424Zm-303-64q-5-85 56-144.5T482.06-692q73.94 0 131.44 43.5T684-533q-76-1-141.5-38T442-675q-14 66-58 115t-107 72Z\"></path></svg>",
+            "title": "Outstanding Customer Service",
+            "description": "support 24 hours a day"
+          }
+        }
+      },
+      "block_order": [
+        "icon_item_aqfwhT",
+        "icon_item_j7RJjz",
+        "icon_item_7pAkB4",
+        "icon_item_Y9NJWA"
+      ],
+      "settings": {
+        "section_color_scheme": "scheme-30a69290-5d98-4fa3-9d85-951d28d9b445",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "column": 4
+      }
+    },
+    "products_tabs_rkUjFU": {
+      "type": "products-tabs",
+      "blocks": {
+        "product_tabs_BtbjdP": {
+          "type": "ProductTabs",
+          "settings": {
+            "title": "Collection 1",
+            "collection": "all"
+          }
+        },
+        "product_tabs_h4JrGt": {
+          "type": "ProductTabs",
+          "settings": {
+            "title": "Collection 2",
+            "collection": "frontpage"
+          }
+        }
+      },
+      "block_order": [
+        "product_tabs_BtbjdP",
+        "product_tabs_h4JrGt"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "title": "Our Top Collections",
+        "heading_size": "h2",
+        "description": "<p>ras sit amet lectus et justo feugiat euismod</p>",
+        "collection_layout": "carousel",
+        "column": 3,
+        "limit_product": 8,
+        "carousel-arrows": true,
+        "carousel-dots": false,
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true
+      }
+    },
+    "collection_list_UXknAg": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_CURijT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "featured_collection_mmiw4W": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "collection-1"
+          }
+        },
+        "featured_collection_7pKWg9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "collection-2"
+          }
+        },
+        "featured_collection_6tCj3P": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "collection-3"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_CURijT",
+        "featured_collection_mmiw4W",
+        "featured_collection_7pKWg9",
+        "featured_collection_6tCj3P"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "show_overlay": true,
+        "show_max_width": false,
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_overlay_9tGR6z": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "block_zphXNx": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/felix-manuel-almonte-ulloa-eXEVipoSz8A-unsplash_13f5ebc4-4f5f-4481-b983-8c78b92db5a6.jpg",
+            "image_overlay_opacity": 0,
+            "image_height": "small",
+            "image_behavior": "none",
+            "desktop_content_position": "top-left",
+            "desktop_content_alignment": "left",
+            "show_text_box": true,
+            "color_scheme": "scheme-2",
+            "stack_images_on_mobile": true,
+            "mobile_content_alignment": "right",
+            "show_text_below": true,
+            "heading": "Image banner",
+            "heading_size": "h2",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body",
+            "button_label": "Button label",
+            "button_link": "shopify://collections",
+            "button_style_secondary": false
+          }
+        },
+        "block_bndjC8": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/vadim-paripa-tEFItLGn0uc-unsplash_ef818bea-05e0-498d-8fdb-546bd1aae6e7.jpg",
+            "image_overlay_opacity": 0,
+            "image_height": "medium",
+            "image_behavior": "none",
+            "desktop_content_position": "top-right",
+            "desktop_content_alignment": "right",
+            "show_text_box": true,
+            "color_scheme": "scheme-2",
+            "stack_images_on_mobile": true,
+            "mobile_content_alignment": "right",
+            "show_text_below": true,
+            "heading": "Image banner",
+            "heading_size": "h2",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body",
+            "button_label": "Button label",
+            "button_link": "shopify://collections",
+            "button_style_secondary": false
+          }
+        },
+        "block_4Gqpgx": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/filipp-romanovski-p89ud3EfIi0-unsplash.jpg",
+            "image_overlay_opacity": 0,
+            "image_height": "medium",
+            "image_behavior": "none",
+            "desktop_content_position": "bottom-right",
+            "desktop_content_alignment": "center",
+            "show_text_box": true,
+            "color_scheme": "",
+            "stack_images_on_mobile": true,
+            "mobile_content_alignment": "center",
+            "show_text_below": true,
+            "heading": "Image banner",
+            "heading_size": "h2",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body",
+            "button_label": "Button label",
+            "button_link": "shopify://collections",
+            "button_style_secondary": false
+          }
+        },
+        "block_rzJcLA": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/stacie-ong-gTrfIjppVQc-unsplash.jpg",
+            "image_overlay_opacity": 0,
+            "image_height": "medium",
+            "image_behavior": "none",
+            "desktop_content_position": "middle-right",
+            "desktop_content_alignment": "right",
+            "show_text_box": true,
+            "color_scheme": "",
+            "stack_images_on_mobile": true,
+            "mobile_content_alignment": "left",
+            "show_text_below": true,
+            "heading": "Image banner",
+            "heading_size": "h2",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body",
+            "button_label": "Button label",
+            "button_link": "shopify://collections",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "block_zphXNx",
+        "block_bndjC8",
+        "block_4Gqpgx",
+        "block_rzJcLA"
+      ],
+      "name": "Image Banner Overlay",
+      "settings": {
+        "column": 2
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "all",
+        "products_to_show": 8,
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "<p>ras sit amet lectus et justo feugiat euismod</p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "testimonial": {
+      "type": "testimonial",
+      "blocks": {
+        "review_item_Mw4pC8": {
+          "type": "review_item",
+          "settings": {
+            "title": "Customer reviews",
+            "heading_size": "h2",
+            "icon_user": "shopify://shop_images/lisa-fotios-344_110x110_crop_center_60000cdd-db24-48af-b992-2491bf58da81.jpg",
+            "description": "<p>Nullam aliquet vestibulum augue non varius. Cras cosmo congue delos melitos. Duis tristique del ante le maliquam praesentoNullam aliquet vestibulum augue non varius. Cras cosmo congue delos melitos. Duis tristique del ante le</p>",
+            "name": "Catherine J."
+          }
+        },
+        "review_item_bRXBkJ": {
+          "type": "review_item",
+          "settings": {
+            "title": "Customer reviews",
+            "heading_size": "h2",
+            "icon_user": "shopify://shop_images/dids-186_110x110_crop_center_a48bdec3-eea9-450d-a320-11aabd7bc744.jpg",
+            "description": "<p>Nullam aliquet vestibulum augue non varius. Cras cosmo congue delos melitos. Duis tristique del ante le maliquam praesentoNullam aliquet vestibulum augue non varius. Cras cosmo congue delos melitos. Duis tristique del ante le</p>",
+            "name": "Teresa J."
+          }
+        },
+        "review_item_8R9gGz": {
+          "type": "review_item",
+          "settings": {
+            "title": "Customer reviews",
+            "heading_size": "h2",
+            "icon_user": "shopify://shop_images/1628155_110x110_crop_center_a8a646e3-f052-4ec4-9ade-d94031bebf8c.jpg",
+            "description": "<p>Nullam aliquet vestibulum augue non varius. Cras cosmo congue delos melitos. Duis tristique del ante le maliquam praesentoNullam aliquet vestibulum augue non varius. Cras cosmo congue delos melitos. Duis tristique del ante le</p>",
+            "name": "Helen B."
+          }
+        }
+      },
+      "block_order": [
+        "review_item_Mw4pC8",
+        "review_item_bRXBkJ",
+        "review_item_8R9gGz"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "title": "Testimonial",
+        "heading_size": "h2",
+        "description": "<p>ras sit amet lectus et justo feugiat euismod</p>",
+        "description_style": "body",
+        "image": "shopify://shop_images/cropped-soroush-karimi-Hl3wr1w0eek-unsplash.jpg",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_full_width": true
+      }
+    },
+    "section_product_list_Qrr6kX": {
+      "type": "section-product-list",
+      "blocks": {
+        "image_banner_R8pfmB": {
+          "type": "image_banner",
+          "settings": {
+            "image": "shopify://shop_images/aaron-james-irp3KJEPpKY.jpg",
+            "image_overlay_opacity": 0,
+            "image_height": "medium",
+            "image_behavior": "none",
+            "desktop_content_position": "bottom-right",
+            "desktop_content_alignment": "right",
+            "show_text_box": true,
+            "color_scheme": "scheme-2",
+            "stack_images_on_mobile": true,
+            "mobile_content_alignment": "right",
+            "show_text_below": true,
+            "heading": "Image banner",
+            "heading_size": "h2",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body",
+            "button_label": "Button label",
+            "button_link": "/",
+            "button_style_secondary": false
+          }
+        },
+        "featured_collection_QtgpNB": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "collection-4",
+            "products_to_show": 12,
+            "title": "Bestseller",
+            "columns_desktop": 6,
+            "color_scheme": "scheme-1",
+            "image_shape": "default",
+            "show_vendor": false,
+            "show_rating": false
+          }
+        },
+        "featured_collection_fkteTV": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "collection-1",
+            "products_to_show": 12,
+            "title": "On Sale",
+            "columns_desktop": 6,
+            "color_scheme": "scheme-1",
+            "image_shape": "default",
+            "show_vendor": false,
+            "show_rating": false
+          }
+        }
+      },
+      "block_order": [
+        "image_banner_R8pfmB",
+        "featured_collection_QtgpNB",
+        "featured_collection_fkteTV"
+      ],
+      "name": "Product list",
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_blog": {
+      "type": "featured-blog",
+      "settings": {
+        "title": "Blog posts",
+        "heading_size": "h2",
+        "description": "<p>ras sit amet lectus et justo feugiat euismod</p>",
+        "description_style": "body",
+        "blog": "news",
+        "shape": "type5",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-4",
+        "show_image": true,
+        "show_date": true,
+        "show_author": true,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_link_ngYALF": {
+      "type": "image-link",
+      "blocks": {
+        "image_item_KTnCe9": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify://shop_images/logo1.png",
+            "link_url": ""
+          }
+        },
+        "image_item_TNRHBy": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify://shop_images/logo8.png",
+            "link_url": ""
+          }
+        },
+        "image_item_RN8TnR": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify://shop_images/logo7.png",
+            "link_url": ""
+          }
+        },
+        "image_item_FTyCLB": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify://shop_images/logo3.png",
+            "link_url": ""
+          }
+        },
+        "image_item_nLXfLp": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify://shop_images/logo4.png",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_item_KTnCe9",
+        "image_item_TNRHBy",
+        "image_item_RN8TnR",
+        "image_item_FTyCLB",
+        "image_item_nLXfLp"
+      ],
+      "name": "Image with Link",
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "column": 5,
+        "shape_img": "square"
+      }
+    }
+  },
+  "order": [
+    "slideshow_Qebeyq",
+    "icon_with_text_hxAdit",
+    "products_tabs_rkUjFU",
+    "collection_list_UXknAg",
+    "image_with_text_overlay_9tGR6z",
+    "featured_collection",
+    "testimonial",
+    "section_product_list_Qrr6kX",
+    "featured_blog",
+    "image_link_ngYALF"
+  ]
+}

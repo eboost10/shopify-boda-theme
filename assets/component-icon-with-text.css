@@ -1,0 +1,63 @@
+
+.icon-with-text__icon {
+    color:  rgb(var(--color-button));
+    fill:  rgb(var(--color-button));
+}
+.icon-with-text {
+    font-size: 0;
+    max-width: 31rem;
+    display: flex;
+    position: relative;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    row-gap: var(--grid-desktop-vertical-spacing);
+}
+.icon-with-text__icon {
+    width: 4rem;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    top: .3rem;
+}
+
+.icon-with-text__icon .icon,
+.icon-with-text__icon svg {
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+}
+
+.icon-with-text__icon svg path {
+    fill: rgb(var(--color-foreground));
+}
+
+.icon-with-text__content {
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+}
+
+.icon-with-text__content .title {
+    margin: 0 0 .1rem;
+    color: rgb(var(--color-heading));
+    font-family: var(--font-heading-family);
+}
+
+.filters-toolbar__input-title .title {
+    font-family: var(--font-body-family);
+
+}
+
+.collection-sortBy {
+    font-family: var(--font-heading-family);
+}
+
+.icon-with-text__content .description {
+    font-weight: normal;
+    margin: 0;
+    color: rgb(var(--color-foreground));
+    font-size: initial;
+}
+

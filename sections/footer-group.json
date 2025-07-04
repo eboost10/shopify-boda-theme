@@ -1,0 +1,73 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "text_CRTKVg": {
+          "type": "text",
+          "settings": {
+            "heading": "BODA",
+            "subtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis risus leo, elementum in malesuada an darius ut augue. Cras sit amet lectus et justo feugiat euismod sed non erat.</p>",
+            "show_logo": true
+          }
+        },
+        
+        "link_list_QfDaH8": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Shop",
+            "menu": "main-menu"
+          }
+        },
+        "text_TAkWHt": {
+          "type": "text",
+          "settings": {
+            "heading": "Contact Us",
+            "subtext": "<p>123 ABC, TAN st, HCM city, Vietnam.</p><p><strong>T</strong>: <a href=\"tel:0123456989\" target=\"_blank\" title=\"tel:0123456989\">0123456989</a></p><p><strong>E</strong>: <a href=\"mailto:support@cosmetic.com\" target=\"_blank\" title=\"mailto:support@cosmetic.com\">support@cosmetic.com</a></p>",
+            "show_logo": false
+          }
+        },
+        "brand_information_UApDyg": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        }
+      },
+      "block_order": [
+        "text_CRTKVg",
+        "link_list_QfDaH8",
+        "text_TAkWHt",
+        "brand_information_UApDyg"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "border-top": true,
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": false,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "copyrighttext": "<p>Shopify Theme by <a href=\"//eboosttech.net\" target=\"_blank\" title=\"//eboosttech.net\">eboosttech.net</a></p>"
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

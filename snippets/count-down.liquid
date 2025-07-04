@@ -1,0 +1,6 @@
+{% assign enable_countdown = block.settings.count_down | default: false %}
+{% if enable_countdown %}
+<div class="product__countdown">
+    <div id="countdown" class="countdown" data-countdown data-countdown-value="{{ enable_countdown }}"></div>
+</div>
+{% endif %}

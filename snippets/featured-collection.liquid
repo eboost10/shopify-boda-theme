@@ -1,0 +1,115 @@
+
+{%- liquid
+  assign products_to_display = block.settings.collection.all_products_count
+
+  if block.settings.collection.all_products_count > block.settings.products_to_show
+    assign products_to_display = block.settings.products_to_show
+  endif
+
+  assign max_columns_to_show =  block.settings.columns_desktop | plus: 0
+
+-%}
+
+<div
+  class="color-{{ block.settings.color_scheme }} isolate gradient"
+>
+  <div
+    class="collection{% if block.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ block.id }}-padding"
+    id="collection-{{ block.id }}"
+    data-id="{{ block.id }}"
+  >
+    <div class="collection__title title-wrapper title-wrapper--no-top-margin {% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+      {%- if block.settings.title != blank -%}
+        <h3 class="title inline-richtext h3 {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          {{ block.settings.title }}
+        </h3>
+      {%- endif -%}
+    </div>
+
+      <ul
+        class=" slider  grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %}"
+        role="list"
+        aria-label="{{ 'general.slider.name' | t }}"
+        data-slick='{
+                        "dots": false,
+                        "arrows": true,
+                        "infinite": false,
+                        "lazyLoad": "ondemand",
+                        "mobileFirst": true,
+                        "adaptiveHeight": false,
+                        "slidesToShow": 1,
+                        "slidesToScroll": 1,
+                        "prevArrow": "<div class=&apos;slick-prev slick-arrow &apos;><svg xmlns=&apos;http://www.w3.org/2000/svg&apos; height=&apos;24px&apos; viewBox=&apos;0 -960 960 960&apos; width=&apos;24px&apos; fill=&apos;#1f1f1f&apos;><path d=&apos;M560-276 356-480l204-204 20 20-184 184 184 184-20 20Z&apos;/></svg></div>", 
+                        "nextArrow": "<div class=&apos;slick-next slick-arrow &apos;><svg xmlns=&apos;http://www.w3.org/2000/svg&apos; height=&apos;24px&apos; viewBox=&apos;0 -960 960 960&apos; width=&apos;24px&apos; fill=&apos;#1f1f1f&apos;><path d=&apos;M540-480 356-664l20-20 204 204-204 204-20-20 184-184Z&apos;/></svg></div>"
+                        }'
+      >
+        {% assign skip_card_product_styles = false %}
+
+        {%- if block.settings.collection.products.size > 0 -%}
+          {% assign lazy_load = false %}
+          {% paginate block.settings.collection.products by block.settings.products_to_show %}
+            <li class="grid__item">
+            {%- for product in block.settings.collection.products limit: block.settings.products_to_show -%}
+              {% if lazy_load == false and forloop.index > max_columns_to_show %}
+                {% assign lazy_load = true %}
+              {% endif %}
+              
+              {% assign mod = forloop.index | modulo: max_columns_to_show %}
+                {% render 'card-product',
+                  card_product: product,
+                  media_aspect_ratio: block.settings.image_ratio,
+                  image_shape: 'portrait',
+                  lazy_load: lazy_load,
+                  show_secondary_image: false,
+                  show_vendor: block.settings.show_vendor,
+                  show_rating: block.settings.show_rating,
+                  skip_styles: skip_card_product_styles,
+                  section_id: block.id,
+                  quick_add: false
+                %}
+                {% if mod  == 0 %}
+                {% unless products_to_display == forloop.index %}
+                  </li><li class="grid__item">
+                {% endunless %}
+                {% endif %}
+                 
+              {%- assign skip_card_product_styles = true -%}
+            {%- endfor -%}
+            </li>
+          {% endpaginate %}
+        {%- else -%}
+          {%- for i in (1..block.settings.columns_desktop) -%}
+            <li
+              class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+              {% if settings.animations_reveal_on_scroll %}
+                data-cascade
+                style="--animation-order: {{ forloop.index }};"
+              {% endif %}
+            >
+              {% liquid
+                assign ridx = forloop.rindex
+                case ridx
+                  when 5
+                    assign ridx = 1
+                  when 6
+                    assign ridx = 2
+                endcase
+              %}
+              {%- assign placeholder_image = 'product-apparel-' | append: ridx -%}
+              {% render 'card-product',
+                show_vendor: block.settings.show_vendor,
+                media_aspect_ratio: block.settings.image_ratio,
+                image_shape: block.settings.image_shape,
+                lazy_load: false,
+                placeholder_image: placeholder_image
+              %}
+            </li>
+          {%- endfor -%}
+        {%- endif -%}
+      </ul>
+   
+    {% if block.settings.image_shape == 'arch' %}
+      {{ 'mask-arch.svg' | inline_asset_content }}
+    {%- endif -%}
+  </div>
+</div>

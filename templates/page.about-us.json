@@ -1,0 +1,139 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_feiYHz": {
+      "type": "multirow",
+      "blocks": {
+        "row_wXbxqp": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/vadim-paripa-tEFItLGn0uc-unsplash_871156f5-e8c9-4215-a7a8-0b989695d99d.jpg",
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_U8kRPP": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/aaron-james-irp3KJEPpKY-unsplash.jpg",
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_7fxnhT": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/tetiana-thiel-ZueZt8hMdvw-unsplash.jpg",
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_wXbxqp",
+        "row_U8kRPP",
+        "row_7fxnhT"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-2168fce5-8d59-47c3-bd79-5e5d78f90df4",
+        "row_color_scheme": "scheme-8b2ac28f-caad-46c8-8bd9-4c12a176fd38",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_VXbxmB": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_KcKz9J": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/sueda-dilli-lKmAzn6iMEE-unsplash.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_BB9JPk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/b57c7010e0a64059aa17023cd6f76c3c.thumbnail.0000000000_1800x1800_62e87c3d-9f85-430d-9354-18f2deff09b4.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jwDWkf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Rosanna_by_Elly_Bride_-_Front_View_Close_Up_1800x1800_9a6e933a-6332-46fc-9340-280e438fb5e8.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_KcKz9J",
+        "column_BB9JPk",
+        "column_jwDWkf"
+      ],
+      "settings": {
+        "title": "Quisque faucibus dignissim faucibus",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "circle",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multirow_feiYHz",
+    "multicolumn_VXbxmB"
+  ]
+}

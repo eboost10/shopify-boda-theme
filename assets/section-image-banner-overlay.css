@@ -1,0 +1,25 @@
+.image-banners-grid  {
+	display: grid;
+	column-gap: var(--grid-desktop-horizontal-spacing);
+  	row-gap: var(--grid-desktop-vertical-spacing);
+}
+.image-banners-grid .banner__box { 
+	background: none;
+}
+
+@media screen and (min-width: 750px) {
+	.image-banners-grid .banner__content {
+		padding: 2rem;
+	}
+	.image-banners-grid .banner__box {
+		max-width: 70%;
+		min-width: 50%;
+	}
+}
+
+
+@media screen and (max-width: 749px) {
+	.image-banners-grid .banner__box {
+		background: rgba(0,0,0,0.2);
+	}
+}
